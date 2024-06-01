@@ -107,4 +107,4 @@ options:
   -h, --help  show this help message and exit
 ```
 ## Видео-демонстрация запуска скрипта
-![Usage](https://github.com/SuzumiyaHaruhi1/suzu_seth/blob/main/doc/suzu_seth.mp4)
+https://github.com/SuzumiyaHaruhi1/suzu_seth/assets/84810190/28ed97ee-1053-4d66-8737-72dc51892b7b
