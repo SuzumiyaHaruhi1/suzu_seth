@@ -14,6 +14,16 @@
 ```python
 pip install psutil scapy tabulate colorama
 ```
+## Установка
+```bash
+git clone https://github.com/SuzumiyaHaruhi1/suzu_seth.git
+```
+```bash
+cd suzu_seth
+```
+```bash
+chmod +x seth.sh
+```
 ## Использование
 Скрипт поддерживает несколько команд для различных задач. При запуске происходит проверка прав пользователя и если запуск производится не от root, требуется ввести пароль.
 ### mitm
