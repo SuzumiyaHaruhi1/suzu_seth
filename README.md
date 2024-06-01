@@ -1,9 +1,9 @@
 # suzu_SETH
 ---
-##### Описание
+## Описание
 Скрипт предназначен для автоматизации выполнения SETH для проведения MITM атаки с перехватом аутентификации пользователя на удаленном RDP-сервере. 
 В данном скрипте производится сканирование подсети на наличие "живых" IP-адресов, запуск SETH на каждый найденный IP в отдельном потоке, а также работа с базами данных для хранения, изменения и вывода результата в табличном виде.
-##### Зависимости
+## Зависимости
 Перед запуском необходимо убедиться в наличии следующих библиотек:
 - `psutil`
 - `scapy`
@@ -14,30 +14,30 @@
 ```python
 pip install psutil scapy tabulate colorama
 ```
-##### Использование
+## Использование
 Скрипт поддерживает несколько команд для различных задач. При запуске происходит проверка прав пользователя и если запуск производится не от root, требуется ввести пароль.
-###### mitm
+### mitm
 Предназначен для запуска SETH на указанную подсеть для проведения MITM атаки
 ```python
 python3 suzu_seth.py mitm -i <interface> -s <subnet> -r <rdp_server>
 ```
-###### show
+### show
 Предназначен для вывода всех имеющихся данных из таблицы `cleartext`, которая хранит в себе перехваченные пароли в чистом виде.
 ```python
 python3 suzu_seth.py show
 ```
-###### clear
+### clear
 Предназначен для очистки всех таблиц базы данных.
 ```python
 python3 suzu_seth.py clear
 ```
-###### remove
+### remove
 Предназначен для очистки значений (если существуют) для определенного IP-адреса (например, когда был перехвачен только NetNTLMv2 hash и требуется заново запустить SETH на этот IP-адрес).
 ```python
 python3 suzu_seth.py remove <IP-адрес>
 ```
-##### HELP меню
-###### Для модулей в целом
+## HELP меню
+### Для модулей в целом
 ```python
 python3 suzu_seth.py -h
 ```
@@ -57,7 +57,7 @@ positional arguments:
 options:
   -h, --help            show this help message and exit
 ```
-###### mitm
+### mitm
 ```python
 python3 run_seth.py mitm -h
 ```
@@ -73,7 +73,7 @@ options:
   -r SERVER, --server SERVER
                         RDP сервер
 ```
-###### show
+### show
 ```python
 python3 run_seth.py show -h
 ```
@@ -83,7 +83,7 @@ usage: run_seth.py show [-h]
 options:
   -h, --help  show this help message and exit
 ```
-###### clear
+### clear
 ```python
 python3 run_seth.py clear -h
 ```
@@ -93,7 +93,7 @@ usage: run_seth.py clear [-h]
 options:
   -h, --help  show this help message and exit
 ```
-###### remove
+### remove
 ```python
 python3 run_seth.py remove -h
 ```
