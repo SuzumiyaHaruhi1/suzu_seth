@@ -301,8 +301,6 @@ def main():
     if os.geteuid() != 0:
         os.execvp('sudo', ['sudo', 'python3'] + sys.argv)
 
-    os.system('clear')
-
     # Определение аргументов командной строки
     parser = argparse.ArgumentParser(description="Automate SETH execution")
     subparsers = parser.add_subparsers(dest='command', help='Available commands')
