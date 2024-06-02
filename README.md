@@ -52,7 +52,7 @@ python3 suzu_seth.py remove <IP-адрес>
 python3 suzu_seth.py -h
 ```
 ```
-usage: run_seth.py [-h] {mitm,show,clear,remove} ...
+usage: suzu_seth.py [-h] {mitm,show,clear,remove} ...
 
 Automate SETH execution
 
@@ -69,10 +69,10 @@ options:
 ```
 ### mitm
 ```python
-python3 run_seth.py mitm -h
+python3 suzu_seth.py mitm -h
 ```
 ```
-usage: run_seth.py mitm [-h] -i INTERFACE -s SUBNET -r SERVER
+usage: suzu_seth.py mitm [-h] -i INTERFACE -s SUBNET -r SERVER
 
 options:
   -h, --help            show this help message and exit
@@ -85,30 +85,30 @@ options:
 ```
 ### show
 ```python
-python3 run_seth.py show -h
+python3 suzu_seth.py show -h
 ```
 ```
-usage: run_seth.py show [-h]
+usage: suzu_seth.py show [-h]
 
 options:
   -h, --help  show this help message and exit
 ```
 ### clear
 ```python
-python3 run_seth.py clear -h
+python3 suzu_seth.py clear -h
 ```
 ```
-usage: run_seth.py clear [-h]
+usage: suzu_seth.py clear [-h]
 
 options:
   -h, --help  show this help message and exit
 ```
 ### remove
 ```python
-python3 run_seth.py remove -h
+python3 suzu_seth.py remove -h
 ```
 ```
-usage: run_seth.py remove [-h] ip
+usage: suzu_seth.py remove [-h] ip
 
 positional arguments:
   ip          IP-адрес для удаления
