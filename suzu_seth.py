@@ -372,8 +372,8 @@ def main():
                 [future.result() for future in as_completed(
                     executor.submit(run_seth, interface, attacker_ip, victim_ip, server, stop_event) for victim_ip in
                     valid_ips)]
-        except (KeyboardInterrupt, Exception):
-            os.system('clear')
+        except (KeyboardInterrupt, Exception) as e:
+            print(f'Ошибка: {e}')
     # Показывает все пароли
     elif args.command == 'show':
         db_data_get_all()
