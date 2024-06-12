@@ -17,6 +17,9 @@ pip install psutil scapy tabulate colorama
 git clone https://github.com/SuzumiyaHaruhi1/suzu_seth.git
 ```
 ```bash
+sudo chmod 755 -R suzu_seth
+```
+```bash
 cd suzu_seth
 ```
 ```bash
